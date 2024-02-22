@@ -27,10 +27,11 @@ class User extends Authenticatable
         'DOB',
         'address',
         'avatar',
+        'point',
     ];
 
     protected $attributes = [
-        'role' => 'user',
+        'role' => '2',
     ];
 
     public $timestamps = false;

@@ -19,6 +19,7 @@ class RegisterController extends Controller
             User::create([
                 'email' => $request->get('email'),
                 'password' => bcrypt($request->get('password')),
+                // 'role' => 2,
             ]);
             return response()->json(['message' => 'success'], 200);
         }
